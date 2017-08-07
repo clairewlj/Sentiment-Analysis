@@ -139,8 +139,8 @@ dist = np.sum(corpus_data_features_nd, axis=0)
 
 # For each, print the vocabulary word and the number of times it
 # appears in the data set
-for tag, count in zip(vocab, dist):
-    print(count, tag)
+# for tag, count in zip(vocab, dist):
+#     print(count, tag)
 
 # In[102]:
 
@@ -331,4 +331,3 @@ time_gnb_predict = t2 - t1
 print("Results for Gaussian Naive Bayes - TFIDF")
 print("Training time: %fs; Prediction time: %fs" % (time_gnb_train, time_gnb_predict))
 print(classification_report(test_sentiment, prediction_gnb))
-
